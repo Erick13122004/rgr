@@ -9,9 +9,10 @@ export const empresa = {
   regiao: "Rio Grande do Sul",
   telefoneExibicao: "(51) 99526-7312",
   whatsapp: "5551995267312",
-  email: "contato@rgrconstrutora.com.br",
-  endereco: "Rio Grande do Sul, Brasil",
-  instagram: "https://instagram.com/rodrigoguimaraesrgr",
+  email: "rodrigorgrconstrutora@gmail.com",
+  endereco: "Osório - RS\nAtlântida Sul",
+  instagram: "https://www.instagram.com/rodrigoguimaraes_construtor",
+  instagramExibicao: "@rodrigoguimaraes_construtor",
   missao:
     "Construir e reformar com experiência prática, qualidade na execução e acompanhamento próximo em cada etapa, atendendo famílias e projetos no litoral gaúcho com confiança, compromisso e cuidado especial em obras residenciais e piscinas.",
   historia: [

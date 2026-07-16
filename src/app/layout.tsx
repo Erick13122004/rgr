@@ -66,7 +66,9 @@ const jsonLd = {
   email: empresa.email,
   address: {
     "@type": "PostalAddress",
+    addressLocality: "Osório",
     addressRegion: "RS",
+    streetAddress: "Atlântida Sul",
     addressCountry: "BR",
   },
   areaServed: "Rio Grande do Sul",

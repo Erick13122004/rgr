@@ -3,7 +3,7 @@ import { obras } from "@/lib/data/obras";
 
 export const dynamic = "force-static";
 
-const siteUrl = "https://www.rgrconstrutora.com.br";
+const siteUrl = "https://rgrconstrutora.net.br";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const obrasUrls = obras.map((o) => ({

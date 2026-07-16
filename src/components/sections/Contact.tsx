@@ -68,14 +68,14 @@ export default function Contact() {
                   <span className="h-11 w-11 flex items-center justify-center border border-ink/15 text-bordeaux">
                     <MapPin size={18} />
                   </span>
-                  <span className="text-sm">{empresa.endereco}</span>
+                  <span className="text-sm whitespace-pre-line">{empresa.endereco}</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <span className="h-11 w-11 flex items-center justify-center border border-ink/15 text-bordeaux">
                     <InstagramIcon size={18} />
                   </span>
                   <a href={empresa.instagram} target="_blank" rel="noopener noreferrer" className="text-sm hover:text-scarlet transition-colors">
-                    @rodrigoguimaraesrgr
+                    {empresa.instagramExibicao}
                   </a>
                 </li>
               </ul>
@@ -84,8 +84,8 @@ export default function Contact() {
             <Reveal delay={0.25}>
               <div className="mt-10 aspect-[16/9] w-full border border-ink/15 overflow-hidden">
                 <iframe
-                  title="Localização RGR Construtora no Rio Grande do Sul"
-                  src="https://www.google.com/maps?q=Rio+Grande+do+Sul,+Brasil&output=embed"
+                  title="Localização RGR Construtora em Atlântida Sul, Osório - RS"
+                  src="https://www.google.com/maps?q=Atl%C3%A2ntida+Sul,+Os%C3%B3rio+-+RS&output=embed"
                   className="w-full h-full grayscale contrast-125"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
