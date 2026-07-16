@@ -1,8 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MessageCircle, Mail, MapPin } from "lucide-react";
 import InstagramIcon from "@/components/illustrations/InstagramIcon";
 import Container from "@/components/ui/Container";
-import BuildingMark from "@/components/illustrations/BuildingMark";
 import { empresa } from "@/lib/data/empresa";
 
 const colunas = [
@@ -33,14 +33,14 @@ export default function Footer() {
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr] gap-12 pb-16 border-b border-ink-line">
           <div>
-            <Link href="/" className="flex items-center gap-3 mb-5">
-              <BuildingMark className="h-10 w-10" tone="scarlet" />
-              <span className="font-display text-xl text-paper">
-                RGR
-                <span className="block font-sans text-[9px] tracking-[0.3em] uppercase text-mist mt-1">
-                  Construtora
-                </span>
-              </span>
+            <Link href="/" className="inline-flex items-center mb-5" aria-label="RGR Construtora">
+              <Image
+                src="/brand/logo-rgr-header.png"
+                alt="RGR Construtora"
+                width={535}
+                height={420}
+                className="h-20 w-auto object-contain"
+              />
             </Link>
             <p className="text-sm text-mist leading-relaxed max-w-xs">
               {empresa.slogan}

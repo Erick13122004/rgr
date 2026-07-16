@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
-import BuildingMark from "@/components/illustrations/BuildingMark";
 import { empresa } from "@/lib/data/empresa";
 
 const links = [
@@ -36,14 +36,15 @@ export default function Header() {
       }`}
     >
       <Container className="flex items-center justify-between h-20">
-        <Link href="/" className="flex items-center gap-3 group">
-          <BuildingMark className="h-9 w-9" tone="scarlet" />
-          <span className="font-display text-lg leading-none text-paper">
-            RGR
-            <span className="block font-sans text-[9px] tracking-[0.3em] uppercase text-mist mt-1">
-              Construtora
-            </span>
-          </span>
+        <Link href="/" className="flex items-center group" aria-label="RGR Construtora">
+          <Image
+            src="/brand/logo-rgr-header.png"
+            alt="RGR Construtora"
+            width={535}
+            height={420}
+            priority
+            className="h-14 w-auto object-contain"
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-9">
@@ -91,9 +92,20 @@ export default function Header() {
             exit={{ opacity: 0 }}
           >
             <Container className="flex items-center justify-between h-20">
-              <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-                <BuildingMark className="h-9 w-9" tone="scarlet" />
-                <span className="font-display text-lg text-paper">RGR</span>
+              <Link
+                href="/"
+                className="flex items-center"
+                aria-label="RGR Construtora"
+                onClick={() => setOpen(false)}
+              >
+                <Image
+                  src="/brand/logo-rgr-header.png"
+                  alt="RGR Construtora"
+                  width={535}
+                  height={420}
+                  priority
+                  className="h-14 w-auto object-contain"
+                />
               </Link>
               <button
                 className="text-paper p-2"

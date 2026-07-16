@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import { empresa } from "@/lib/data/empresa";
 
-const siteUrl = "https://www.rgrconstrutora.com.br";
+const siteUrl = "https://rgrconstrutora.net.br";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -34,10 +34,10 @@ export const metadata: Metadata = {
       "Conheça registros reais de obras residenciais, piscina e etapas de execução da RGR Construtora.",
     images: [
       {
-        url: "/hero/fachada-concluida.webp",
-        width: 1600,
-        height: 1200,
-        alt: "Fachada de obra residencial da RGR Construtora",
+        url: "/brand/og-logo-rgr.png",
+        width: 1200,
+        height: 630,
+        alt: "Logo da RGR Construtora",
       },
     ],
   },
@@ -45,7 +45,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${empresa.nome} | Construção residencial no RS`,
     description: empresa.slogan,
-    images: ["/hero/fachada-concluida.webp"],
+    images: ["/brand/og-logo-rgr.png"],
+  },
+  icons: {
+    icon: "/brand/favicon.png",
+    shortcut: "/brand/favicon.png",
+    apple: "/brand/apple-touch-icon.png",
   },
   robots: { index: true, follow: true },
   alternates: { canonical: siteUrl },
@@ -55,7 +60,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
   name: empresa.nome,
-  image: `${siteUrl}/hero/fachada-concluida.webp`,
+  image: `${siteUrl}/brand/logo-rgr.png`,
   url: siteUrl,
   telephone: `+${empresa.whatsapp}`,
   email: empresa.email,
