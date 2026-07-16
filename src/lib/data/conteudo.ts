@@ -86,4 +86,14 @@ export const videosDestaque: VideoDestaque[] = [
     poster: "/videos/obra-residencial-poster.webp",
     descricao: "Registro real de ambientes, área externa e detalhes de uma obra residencial.",
   },
+  {
+    id: "vd2",
+    titulo: "Trajetória no Sky Palace Hotel",
+    obraRelacionada: "sobre",
+    duracao: "00:51",
+    src: "/videos/sky-palace-trajetoria.mp4",
+    poster: "/videos/sky-palace-poster.webp",
+    descricao:
+      "Registro relacionado à trajetória de Rodrigo em uma etapa importante de sua experiência na construção civil.",
+  },
 ];
