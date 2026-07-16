@@ -6,6 +6,9 @@ import { numeros } from "@/lib/data/empresa";
 export default function Stats() {
   return (
     <section id="numeros" className="relative bg-paper text-ink py-24 bp-grid-dim">
+      <noscript>
+        <style>{`#numeros [style*="opacity:0"]{opacity:1!important;transform:none!important;}`}</style>
+      </noscript>
       <Container>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-8">
           {numeros.map((n, i) => (
