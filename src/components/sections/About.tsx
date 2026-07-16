@@ -18,14 +18,11 @@ export default function About() {
             />
 
             <Reveal delay={0.15}>
-              <p className="mt-7 text-sm md:text-base text-mist leading-relaxed">
-                A história da RGR começou em 2010, quando Rodrigo Guimarães iniciou sua
-                trajetória realizando pequenas obras no interior do Rio Grande do Sul. A
-                experiência adquirida em cada serviço levou à fundação oficial da empresa
-                em 2016. Desde então, a RGR ampliou sua equipe, participou de grandes
-                projetos em Gramado e construiu uma trajetória sólida no litoral gaúcho,
-                onde se tornou reconhecida especialmente pela execução de piscinas.
-              </p>
+              <div className="mt-7 space-y-4 text-sm md:text-base text-mist leading-relaxed">
+                {empresa.historia.map((paragrafo) => (
+                  <p key={paragrafo}>{paragrafo}</p>
+                ))}
+              </div>
             </Reveal>
 
             <Reveal delay={0.2}>
@@ -46,7 +43,7 @@ export default function About() {
                 <div className="relative h-full w-full">
                   <Image
                     src="/rodrigo-familia-rgr.jpeg"
-                    alt="Rodrigo Guimarães, fundador da RGR, com sua família"
+                    alt="Rodrigo Guimarães, responsável pela RGR, com sua família"
                     fill
                     sizes="(min-width: 1024px) 42vw, 100vw"
                     className="object-cover brightness-[0.82] contrast-110 saturate-95"

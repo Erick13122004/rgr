@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: `%s | ${empresa.nome}`,
   },
   description:
-    "Desde 2010, a RGR Construtora atua com construções residenciais, obras completas, reformas, projetos de maior porte e construção de piscinas no litoral gaúcho.",
+    "Experiência construída desde 2010 em obras residenciais, reformas, projetos de maior porte e construção de piscinas no litoral gaúcho.",
   keywords: [
     "construtora Rio Grande do Sul",
     "construtora RS",
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     siteName: empresa.nome,
     title: `${empresa.nome} | Construção civil e piscinas no RS`,
     description:
-      "Conheça a trajetória da RGR: experiência prática desde 2010, fundação em 2016 e atuação no litoral gaúcho.",
+      "Conheça a trajetória da RGR: experiência prática desde 2010, atuação independente iniciada em 2016 e presença no litoral gaúcho.",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: empresa.nome }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${empresa.nome} | Construção civil e piscinas no RS`,
-    description: "Desde 2010, construindo histórias com experiência, qualidade e confiança.",
+    description: "Experiência construída desde 2010 com trabalho, qualidade e confiança.",
     images: ["/og-image.jpg"],
   },
   robots: { index: true, follow: true },
@@ -60,7 +60,6 @@ const jsonLd = {
   },
   areaServed: "Rio Grande do Sul",
   sameAs: [empresa.instagram],
-  foundingDate: String(empresa.fundacao),
   description:
     "Construtora com atuação em obras residenciais, reformas, projetos de maior porte e construção de piscinas no litoral gaúcho.",
 };

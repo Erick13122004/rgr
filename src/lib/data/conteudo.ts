@@ -52,7 +52,7 @@ export const servicos: Servico[] = [
     id: "s2",
     titulo: "Projetos de maior porte",
     descricao:
-      "Atuação em obras maiores, com experiência acumulada em projetos importantes em Gramado e região.",
+      "Experiência em obras de maior escala, incluindo trabalhos em Gramado e Canela.",
     itens: ["Equipe ampliada", "Execução por etapas", "Acompanhamento técnico"],
     icone: "building",
   },

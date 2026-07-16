@@ -35,8 +35,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           className="font-display text-[clamp(2.6rem,7vw,6rem)] leading-[0.98] text-paper max-w-4xl text-balance"
         >
-          Desde <span className="italic text-scarlet">2010</span>, construindo
-          histórias com qualidade e confiança.
+          Experiência construída desde <span className="italic text-scarlet">2010</span>.
         </motion.h1>
 
         <motion.p
@@ -45,9 +44,9 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-7 max-w-lg text-base md:text-lg text-mist leading-relaxed"
         >
-          Da primeira experiência no canteiro à entrega de obras completas:
-          acompanhamento próximo, execução cuidadosa e atuação sólida em casas,
-          projetos de maior porte e piscinas no litoral gaúcho.
+          Da experiência prática nas obras à atuação independente: trabalho,
+          acompanhamento próximo e compromisso em casas, projetos de maior porte
+          e piscinas no litoral gaúcho.
         </motion.p>
 
         <motion.div
