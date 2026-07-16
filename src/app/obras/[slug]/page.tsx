@@ -69,7 +69,7 @@ export default async function ObraPage({
               <p className="font-mono text-[11px] tracking-[0.22em] uppercase text-scarlet mb-5">
                 {obra.categoria} · {obra.status}
               </p>
-              <h1 className="font-display text-[clamp(2.4rem,5.5vw,4.6rem)] leading-[1.02] text-paper text-balance">
+              <h1 className="font-display font-semibold text-[clamp(2.4rem,5.5vw,4.6rem)] leading-[1.02] text-paper text-balance">
                 {obra.nome}
               </h1>
               <p className="mt-7 max-w-xl text-mist leading-relaxed">
@@ -188,7 +188,7 @@ export default async function ObraPage({
                 <Reveal key={etapa.id} delay={i * 0.08}>
                   <div className="border-t border-scarlet pt-6">
                     <p className="font-mono text-xs text-scarlet">{etapa.mes}</p>
-                    <p className="mt-2 font-display text-lg text-paper">{etapa.titulo}</p>
+                    <p className="mt-2 font-display font-semibold text-lg text-paper">{etapa.titulo}</p>
                     <p className="mt-2 text-[13px] text-mist leading-relaxed">{etapa.descricao}</p>
                   </div>
                 </Reveal>
@@ -214,11 +214,11 @@ export default async function ObraPage({
       <section className="py-20 border-t border-ink-line">
         <Container className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
-            <h2 className="font-display text-2xl md:text-3xl text-paper max-w-md text-balance">
-              Quer conversar sobre a sua obra?
+            <h2 className="font-display font-semibold text-2xl md:text-3xl text-paper max-w-md text-balance">
+              Quer avaliar uma obra parecida?
             </h2>
             <p className="mt-3 text-sm text-mist max-w-xl">
-              Fale com a RGR e envie as informações do projeto para receber orientação.
+              Envie as informações do local e fale direto com a RGR pelo WhatsApp.
             </p>
           </div>
           <Button

@@ -59,7 +59,7 @@ export default function VideoModal({
           >
             <div className="flex items-center justify-between gap-4 mb-4">
               <div>
-                <p className="font-display text-xl text-paper">{titulo}</p>
+                <p className="font-display font-semibold text-xl text-paper">{titulo}</p>
                 {descricao && <p className="text-sm text-mist mt-1">{descricao}</p>}
               </div>
               <button

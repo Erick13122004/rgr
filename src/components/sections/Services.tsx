@@ -18,7 +18,7 @@ export default function Services() {
       <Container>
         <SectionHeading
           eyebrow="O que fazemos"
-          title="Serviços sob medida para cada etapa da obra."
+          title="Execução completa para obra residencial."
           align="center"
           light
         />
@@ -30,7 +30,7 @@ export default function Services() {
               <Reveal key={servico.id} delay={i * 0.06} className="bg-paper">
                 <div className="h-full p-8 md:p-10 hover:bg-ink hover:text-paper transition-colors duration-500 group">
                   <Icon size={26} className="text-bordeaux group-hover:text-scarlet transition-colors" strokeWidth={1.5} />
-                  <h3 className="mt-6 font-display text-xl">{servico.titulo}</h3>
+                  <h3 className="mt-6 font-display font-semibold text-xl">{servico.titulo}</h3>
                   <p className="mt-3 text-sm text-stone group-hover:text-mist leading-relaxed transition-colors">
                     {servico.descricao}
                   </p>

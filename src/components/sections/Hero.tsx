@@ -38,9 +38,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-          className="font-display text-[clamp(2.6rem,7vw,6rem)] leading-[0.98] text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.55)] max-w-4xl text-balance"
+          className="font-display font-semibold text-[clamp(2.8rem,7vw,6.2rem)] leading-[0.95] text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.55)] max-w-4xl text-balance"
         >
-          Excelência que transforma projetos em lares únicos.
+          Obra residencial executada com controle do início à entrega.
         </motion.h1>
 
         <motion.p
@@ -49,7 +49,8 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-7 max-w-lg text-base md:text-lg text-white/85 leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]"
         >
-          Construção com qualidade, compromisso e atenção em cada etapa.
+          Casas, reformas, piscinas e acabamentos no litoral norte, com
+          acompanhamento direto de Rodrigo Guimarães.
         </motion.p>
 
         <motion.div
@@ -59,10 +60,10 @@ export default function Hero() {
           className="mt-10 flex flex-wrap items-center gap-4"
         >
           <Button href="/obras" variant="primary">
-            Ver nossas obras
+            Ver obras reais
           </Button>
           <Button href="/#contato" variant="outline-light">
-            Solicitar orçamento
+            Falar com Rodrigo
           </Button>
         </motion.div>
       </Container>

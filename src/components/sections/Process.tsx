@@ -5,27 +5,27 @@ import Reveal from "@/components/ui/Reveal";
 
 const etapas = [
   {
-    titulo: "Conversa inicial",
+    titulo: "Diagnóstico",
     descricao:
-      "Entendimento do objetivo da obra, do tipo de serviço e das informações necessárias para avaliar o projeto.",
+      "Entendimento do tipo de obra, prioridades, medidas, prazo desejado e materiais envolvidos.",
     icone: FileText,
   },
   {
-    titulo: "Orçamento claro",
+    titulo: "Orçamento",
     descricao:
-      "Levantamento do escopo, alinhamento de prioridades e orientação sobre etapas antes do início da execução.",
+      "Escopo definido com clareza para o cliente entender o que será executado antes do início.",
     icone: ClipboardCheck,
   },
   {
-    titulo: "Execução acompanhada",
+    titulo: "Execução",
     descricao:
-      "Presença próxima no canteiro, cuidado com materiais, equipe e sequência de trabalho combinada.",
+      "Canteiro acompanhado de perto, com atenção à equipe, materiais e sequência de serviço.",
     icone: HardHat,
   },
   {
-    titulo: "Entrega com responsabilidade",
+    titulo: "Entrega",
     descricao:
-      "Conferência dos detalhes finais, acabamento e organização para entregar a obra com seriedade.",
+      "Conferência de acabamento, limpeza visual e detalhes finais antes da conclusão.",
     icone: KeyRound,
   },
 ];
@@ -36,8 +36,8 @@ export default function Process() {
       <Container>
         <SectionHeading
           eyebrow="Processo"
-          title="Da primeira conversa à entrega da obra."
-          description="Um jeito de trabalhar direto, organizado e próximo do cliente, com Rodrigo acompanhando as decisões importantes de cada etapa."
+          title="Como a RGR conduz sua obra."
+          description="Um fluxo direto para tirar dúvidas, alinhar orçamento e executar com presença no canteiro."
           align="center"
           light
         />
@@ -49,7 +49,7 @@ export default function Process() {
               <Reveal key={etapa.titulo} delay={i * 0.06} className="bg-paper">
                 <div className="h-full p-8 md:p-9">
                   <Icon size={25} className="text-bordeaux" strokeWidth={1.5} />
-                  <p className="mt-6 font-display text-xl">{etapa.titulo}</p>
+                  <p className="mt-6 font-display font-semibold text-xl">{etapa.titulo}</p>
                   <p className="mt-3 text-sm text-stone leading-relaxed">
                     {etapa.descricao}
                   </p>

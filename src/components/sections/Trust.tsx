@@ -4,12 +4,12 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
 
 const pontos = [
-  "Atendimento direto com Rodrigo Guimarães",
-  "Atuação em Osório, Atlântida Sul e litoral norte do RS",
-  "Experiência prática desde 2010 na construção civil",
-  "Execução de casas, reformas, acabamentos e piscinas",
-  "Acompanhamento próximo da rotina da obra",
-  "Comunicação objetiva sobre etapas, materiais e decisões",
+  "Contato direto com Rodrigo Guimarães",
+  "Atendimento em Osório, Atlântida Sul e litoral norte",
+  "Experiência prática desde 2010",
+  "Casas, reformas, acabamentos e piscinas",
+  "Rotina de obra acompanhada de perto",
+  "Comunicação clara sobre escopo, materiais e decisões",
 ];
 
 export default function Trust() {
@@ -19,8 +19,8 @@ export default function Trust() {
         <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-14 items-start">
           <SectionHeading
             eyebrow="Confiança"
-            title="Segurança para quem quer construir com clareza."
-            description="Empresários, famílias e parceiros valorizam obra bem conduzida: presença, palavra firme, organização e cuidado com o que foi combinado."
+            title="Para contratar sem improviso."
+            description="Quem decide uma obra precisa ver clareza, responsabilidade e alguém presente no canteiro. É isso que a RGR entrega."
           />
 
           <div className="grid sm:grid-cols-2 gap-5">

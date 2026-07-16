@@ -34,7 +34,7 @@ export default function ObraCard({ obra }: { obra: Obra; index?: number }) {
           <p className="font-mono text-[11px] tracking-[0.16em] uppercase text-scarlet mb-1.5">
             {obra.categoria}
           </p>
-          <h3 className="font-display text-xl text-paper group-hover:text-scarlet transition-colors">
+          <h3 className="font-display font-semibold text-xl text-paper group-hover:text-scarlet transition-colors">
             {obra.nome}
           </h3>
           <p className="mt-1.5 flex items-center gap-1.5 text-[13px] text-mist">

@@ -17,9 +17,9 @@ export default function VideosSection() {
     <section className="relative bg-ink py-28 md:py-36">
       <Container>
         <SectionHeading
-          eyebrow="Vídeo"
-          title="A construção, em movimento."
-          description="Um registro real da obra para mostrar detalhes, ambientes e acabamento sem recorrer a material fictício."
+          eyebrow="Registros"
+          title="Vídeos que mostram o padrão de perto."
+          description="Obra residencial e trajetória profissional em registros reais, sem material genérico."
         />
 
         <div className="mt-16 grid md:grid-cols-[1fr_0.85fr] gap-10 items-center">
@@ -57,13 +57,12 @@ export default function VideosSection() {
 
           <Reveal delay={0.15}>
             <div className="border-t border-scarlet pt-8">
-              <p className="font-display text-2xl md:text-3xl text-paper">
-                Obra e trajetória em movimento.
+              <p className="font-display font-semibold text-2xl md:text-3xl text-paper">
+                Prova visual, sem promessa vazia.
               </p>
               <p className="mt-5 text-sm md:text-base text-mist leading-relaxed max-w-xl">
-                Registros reais ajudam a mostrar acabamento, ambiente, execução
-                e momentos importantes da experiência construída por Rodrigo na
-                construção civil.
+                Veja acabamento, ambiente e experiência prática para decidir com
+                mais segurança antes de iniciar uma conversa.
               </p>
             </div>
           </Reveal>

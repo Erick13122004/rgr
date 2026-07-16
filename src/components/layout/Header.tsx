@@ -85,7 +85,7 @@ export default function Header() {
               {empresa.telefoneExibicao}
             </a>
             <Button href="/#contato" variant="primary" className="!py-3">
-              Solicitar orçamento
+              Orçamento direto
             </Button>
           </div>
 
@@ -144,7 +144,7 @@ export default function Header() {
                       <Link
                         href={link.href}
                         onClick={() => setOpen(false)}
-                        className="block py-4 border-b border-ink-line font-display text-2xl text-paper hover:text-scarlet transition-colors"
+                        className="block py-4 border-b border-ink-line font-display font-semibold text-2xl text-paper hover:text-scarlet transition-colors"
                       >
                         {link.label}
                       </Link>
@@ -152,7 +152,7 @@ export default function Header() {
                   ))}
                   <div className="mt-8 flex flex-col gap-4">
                     <Button href="/#contato" onClick={() => setOpen(false)}>
-                      Solicitar orçamento
+                      Orçamento direto
                     </Button>
                     <a
                       href={`https://wa.me/${empresa.whatsapp}`}

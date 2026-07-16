@@ -41,8 +41,8 @@ export default function Contact() {
           <div>
             <SectionHeading
               eyebrow="Contato"
-              title="Vamos conversar sobre sua obra."
-              description="Preencha o formulário ou fale diretamente pelo WhatsApp da RGR para obras em Osório, Atlântida Sul e litoral norte."
+              title="Envie sua obra para avaliação."
+              description="Passe o tipo de serviço, localização e fotos do local. A RGR retorna pelo WhatsApp com o próximo passo."
               light
             />
 
@@ -97,7 +97,7 @@ export default function Contact() {
           <Reveal delay={0.1}>
             <form onSubmit={handleSubmit} className="bg-ink text-paper p-8 md:p-10">
               <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-scarlet mb-8">
-                Solicitar orçamento
+                Orçamento direto
               </p>
 
               <div className="space-y-6">
@@ -149,7 +149,7 @@ export default function Contact() {
                     value={mensagem}
                     onChange={(e) => setMensagem(e.target.value)}
                     className="w-full bg-transparent border-b border-paper/25 focus:border-scarlet py-3 text-sm outline-none transition-colors resize-none"
-                    placeholder="Conte um pouco sobre seu projeto"
+                    placeholder="Tipo de obra, bairro, prazo desejado e detalhes importantes"
                   />
                 </div>
               </div>

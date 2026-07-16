@@ -28,7 +28,7 @@ export default function SectionHeading({
       </Reveal>
       <Reveal delay={0.08}>
         <h2
-          className={`font-display text-[clamp(2rem,4.2vw,3.4rem)] leading-[1.08] text-balance ${
+          className={`font-display font-semibold text-[clamp(2rem,4.2vw,3.4rem)] leading-[1.04] text-balance ${
             light ? "text-ink" : "text-paper"
           }`}
         >

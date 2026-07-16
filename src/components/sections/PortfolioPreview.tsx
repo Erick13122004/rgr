@@ -14,12 +14,12 @@ export default function PortfolioPreview() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
           <SectionHeading
             eyebrow="Portfólio"
-            title="Obras reais, registradas em cada etapa."
-            description="Uma seleção de fotos e vídeo reais da RGR, com projetos apresentados de forma fiel ao material disponível."
+            title="Veja a execução antes de contratar."
+            description="Fotos e vídeos reais de fachadas, canteiro, piscina, acabamento e etapas de obra."
           />
           <Reveal delay={0.2}>
             <Button href="/obras" variant="outline-light">
-              Ver obras
+              Abrir portfólio
             </Button>
           </Reveal>
         </div>

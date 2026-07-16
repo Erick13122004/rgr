@@ -21,12 +21,12 @@ export default function ObrasPage() {
               Portfólio
             </span>
           </div>
-          <h1 className="font-display text-[clamp(2.2rem,5vw,4.2rem)] leading-[1.05] text-paper max-w-3xl text-balance">
-            Obras reais, apresentadas com clareza.
+          <h1 className="font-display font-semibold text-[clamp(2.2rem,5vw,4.2rem)] leading-[1.02] text-paper max-w-3xl text-balance">
+            Portfólio direto: obra, canteiro e acabamento.
           </h1>
           <p className="mt-6 max-w-xl text-mist text-base leading-relaxed">
-            Fotos e vídeo reais organizados por tipo de registro, com foco em
-            casas, piscinas, reformas e acompanhamento de obras no litoral norte.
+            Registros reais para avaliar padrão de execução antes de chamar a
+            RGR para sua casa, reforma, piscina ou acabamento.
           </p>
         </Reveal>
 

@@ -3,7 +3,7 @@ import { EtapaEmpresa } from "@/types";
 export const empresa = {
   nome: "RGR Construtora",
   responsavel: "Rodrigo Guimarães",
-  slogan: "Experiência construída desde 2010 com trabalho, qualidade e confiança.",
+  slogan: "Execução residencial com presença no canteiro e palavra firme.",
   inicioTrajetoria: 2010,
   inicioAtuacaoIndependente: 2016,
   regiao: "Osório - RS · Atlântida Sul",
@@ -19,7 +19,7 @@ export const empresa = {
     "Litoral norte do Rio Grande do Sul",
   ],
   missao:
-    "Construir e reformar com experiência prática, qualidade na execução e acompanhamento próximo em cada etapa, atendendo famílias e projetos em Osório, Atlântida Sul e no litoral norte do Rio Grande do Sul com confiança, compromisso e cuidado especial em obras residenciais e piscinas.",
+    "A RGR executa casas, reformas, acabamentos e piscinas em Osório, Atlântida Sul e litoral norte com presença no canteiro, comunicação direta e responsabilidade em cada etapa.",
   historia: [
     "A trajetória de Rodrigo Guimarães na construção civil começou em 2010, quando passou a trabalhar como peão para dois irmãos. Durante aproximadamente seis anos, atuou diretamente nas obras, adquirindo experiência prática e conhecendo cada etapa do trabalho na construção civil.",
     "Em 2016, Rodrigo iniciou sua atuação independente, dando origem à trajetória que posteriormente se consolidaria como RGR Construtora. Seu primeiro serviço por conta própria foi realizado em Gramado, no Hotel Daara, marcando uma nova fase em sua vida profissional.",

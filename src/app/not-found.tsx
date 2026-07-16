@@ -11,7 +11,7 @@ export default function NotFound() {
         <p className="font-mono text-[11px] tracking-[0.22em] uppercase text-scarlet mb-4">
           Erro 404
         </p>
-        <h1 className="font-display text-[clamp(2rem,5vw,3.5rem)] text-paper">
+        <h1 className="font-display font-semibold text-[clamp(2rem,5vw,3.5rem)] text-paper">
           Esta página não foi encontrada.
         </h1>
         <p className="mt-5 text-mist max-w-md mx-auto">

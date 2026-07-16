@@ -3,42 +3,42 @@ import { Servico, Diferencial, VideoDestaque } from "@/types";
 export const servicos: Servico[] = [
   {
     id: "s1",
-    titulo: "Construção residencial",
+    titulo: "Casas e estruturas",
     descricao:
-      "Execução de obras residenciais em Osório, Atlântida Sul e litoral norte com organização, acompanhamento e cuidado em cada etapa.",
-    itens: ["Obras completas", "Estrutura e alvenaria", "Acabamentos"],
+      "Execução de casas no litoral norte com estrutura, alvenaria e etapas bem acompanhadas.",
+    itens: ["Obra completa", "Estrutura", "Alvenaria"],
     icone: "home",
   },
   {
     id: "s2",
-    titulo: "Execução de projetos",
+    titulo: "Projeto em obra",
     descricao:
-      "Transformação do projeto em obra, com atenção à leitura técnica, ao canteiro e ao resultado final.",
-    itens: ["Planejamento da execução", "Etapas organizadas", "Acompanhamento técnico"],
+      "Leitura do projeto, organização de etapas e condução prática no canteiro.",
+    itens: ["Leitura técnica", "Planejamento", "Execução"],
     icone: "building",
   },
   {
     id: "s3",
-    titulo: "Acompanhamento de obras",
+    titulo: "Gestão do canteiro",
     descricao:
-      "Presença próxima no canteiro para acompanhar andamento, decisões, materiais e qualidade da execução.",
-    itens: ["Rotina de obra", "Controle das etapas", "Apoio ao cliente"],
+      "Presença próxima para orientar equipe, materiais, sequência e qualidade da execução.",
+    itens: ["Rotina de obra", "Equipe", "Materiais"],
     icone: "clipboard",
   },
   {
     id: "s4",
     titulo: "Reformas e ampliações",
     descricao:
-      "Intervenções residenciais planejadas para melhorar espaços existentes com menos transtorno.",
-    itens: ["Reformas residenciais", "Ampliações", "Adequações de espaços"],
+      "Melhorias residenciais planejadas para ampliar, renovar ou adequar espaços existentes.",
+    itens: ["Reformas", "Ampliações", "Adequações"],
     icone: "hammer",
   },
   {
     id: "s5",
     titulo: "Acabamentos",
     descricao:
-      "Cuidado com detalhes finais que valorizam a obra e deixam os ambientes prontos para uso.",
-    itens: ["Revestimentos", "Detalhes finais", "Qualidade visual"],
+      "Cuidado com revestimentos, detalhes finais e padrão visual de entrega.",
+    itens: ["Revestimentos", "Detalhes", "Entrega"],
     icone: "ruler",
   },
 ];
@@ -46,32 +46,32 @@ export const servicos: Servico[] = [
 export const diferenciais: Diferencial[] = [
   {
     id: "df1",
-    titulo: "Presença na obra",
-    descricao: "Acompanhamento próximo para manter cada etapa bem conduzida.",
+    titulo: "Rodrigo na frente",
+    descricao: "Contato direto com quem entende a execução e acompanha as decisões importantes.",
     icone: "eye",
   },
   {
     id: "df2",
-    titulo: "Organização",
-    descricao: "Processo de trabalho claro, com atenção ao canteiro, materiais e sequência da execução.",
+    titulo: "Canteiro organizado",
+    descricao: "Etapas, materiais e equipe conduzidos com rotina clara de trabalho.",
     icone: "clock",
   },
   {
     id: "df3",
-    titulo: "Compromisso",
-    descricao: "Relação direta, responsável e orientada ao que foi combinado com o cliente.",
+    titulo: "Palavra firme",
+    descricao: "Comunicação direta sobre orçamento, escopo e andamento da obra.",
     icone: "handshake",
   },
   {
     id: "df4",
-    titulo: "Atenção aos detalhes",
-    descricao: "Cuidado com acabamento, proporção e qualidade visual do resultado final.",
+    titulo: "Acabamento valorizado",
+    descricao: "Atenção ao resultado que aparece: fachada, proporção, revestimentos e detalhes.",
     icone: "shield",
   },
   {
     id: "df5",
-    titulo: "Execução residencial",
-    descricao: "Experiência aplicada em casas, reformas, áreas externas e piscinas.",
+    titulo: "Experiência real",
+    descricao: "Trajetória prática em casas, reformas, áreas externas, piscinas e obras maiores.",
     icone: "users",
   },
 ];

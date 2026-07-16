@@ -13,7 +13,7 @@ export default function About() {
           <div>
             <SectionHeading
               eyebrow="Sobre nós"
-              title="Uma história construída com trabalho e experiência."
+              title="Rodrigo Guimarães, da obra ao comando da RGR."
               description={empresa.missao}
             />
 
@@ -52,7 +52,7 @@ export default function About() {
                     <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-paper/75">
                       Família e propósito
                     </p>
-                    <p className="mt-2 font-display text-2xl text-paper">
+                    <p className="mt-2 font-display font-semibold text-2xl text-paper">
                       Rodrigo Guimarães
                     </p>
                   </div>
@@ -86,7 +86,7 @@ export default function About() {
                   <div className="relative pl-6 md:pl-0">
                     <div className="absolute left-0 top-1.5 md:relative md:mb-5 h-3.5 w-3.5 rounded-full bg-scarlet ring-4 ring-scarlet/15" />
                     <div className="absolute left-[6px] top-4 bottom-0 w-px bg-ink-line md:hidden" />
-                    <p className="font-display text-2xl text-paper">{etapa.ano}</p>
+                    <p className="font-display font-semibold text-2xl text-paper">{etapa.ano}</p>
                     <p className="mt-2 text-sm font-medium text-paper/90">{etapa.titulo}</p>
                     <p className="mt-2 text-[13px] text-mist leading-relaxed">{etapa.descricao}</p>
                   </div>

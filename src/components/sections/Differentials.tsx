@@ -18,7 +18,7 @@ export default function Differentials() {
       <Container>
         <SectionHeading
           eyebrow="Diferenciais"
-          title="Por que construir com a RGR."
+          title="O que pesa na decisão."
         />
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6">
@@ -28,7 +28,7 @@ export default function Differentials() {
               <Reveal key={item.id} delay={i * 0.08}>
                 <div className="border-t border-scarlet pt-6">
                   <Icon size={24} className="text-scarlet" strokeWidth={1.5} />
-                  <h3 className="mt-5 font-display text-lg text-paper leading-snug">
+                  <h3 className="mt-5 font-display font-semibold text-lg text-paper leading-snug">
                     {item.titulo}
                   </h3>
                   <p className="mt-3 text-[13px] text-mist leading-relaxed">
