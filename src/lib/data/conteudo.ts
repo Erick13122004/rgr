@@ -1,83 +1,44 @@
-import { Depoimento, Servico, Diferencial, VideoDestaque } from "@/types";
-
-export const depoimentos: Depoimento[] = [
-  {
-    id: "d1",
-    nome: "Fernanda Costa",
-    cidade: "Porto Alegre, RS",
-    obra: "Residência Vista Verde",
-    texto:
-      "A RGR conduziu cada etapa da nossa casa com uma transparência que não víamos em outras construtoras. Cada real investido foi explicado, cada prazo foi cumprido.",
-    nota: 5,
-  },
-  {
-    id: "d2",
-    nome: "Marcelo Andrade",
-    cidade: "Canoas, RS",
-    obra: "Edifício Horizonte",
-    texto:
-      "Comprei na planta e recebi exatamente o que foi prometido, no prazo combinado. A equipe da RGR mantinha a gente informado semanalmente sobre o andamento da obra.",
-    nota: 5,
-  },
-  {
-    id: "d3",
-    nome: "Juliana e Rafael",
-    cidade: "São Leopoldo, RS",
-    obra: "Cobertura Jardim Europa",
-    texto:
-      "Fizemos a reforma da nossa cobertura com a RGR e o cuidado com os detalhes foi impressionante. Recomendamos de olhos fechados.",
-    nota: 5,
-  },
-  {
-    id: "d4",
-    nome: "Eduardo Lima",
-    cidade: "Gravataí, RS",
-    obra: "Plaza Center Comercial",
-    texto:
-      "Precisávamos de uma construtora que entendesse prazo comercial. A RGR entregou nossas salas prontas para operar, sem surpresas no orçamento.",
-    nota: 4,
-  },
-];
+import { Servico, Diferencial, VideoDestaque } from "@/types";
 
 export const servicos: Servico[] = [
   {
     id: "s1",
     titulo: "Construção residencial",
     descricao:
-      "Casas e obras residenciais completas, com acompanhamento próximo do início à conclusão.",
-    itens: ["Obras completas", "Estrutura e alvenaria", "Acabamento com qualidade"],
+      "Execução de obras residenciais com organização, acompanhamento e cuidado em cada etapa.",
+    itens: ["Obras completas", "Estrutura e alvenaria", "Acabamentos"],
     icone: "home",
   },
   {
     id: "s2",
-    titulo: "Projetos de maior porte",
+    titulo: "Execução de projetos",
     descricao:
-      "Experiência em obras de maior escala, incluindo trabalhos em Gramado e Canela.",
-    itens: ["Equipe ampliada", "Execução por etapas", "Acompanhamento técnico"],
+      "Transformação do projeto em obra, com atenção à leitura técnica e ao resultado final.",
+    itens: ["Planejamento da execução", "Etapas organizadas", "Acompanhamento técnico"],
     icone: "building",
   },
   {
     id: "s3",
-    titulo: "Reformas",
+    titulo: "Acompanhamento de obras",
     descricao:
-      "Retrofit e reformas completas com planejamento que minimiza transtornos durante a execução.",
-    itens: ["Reforma estrutural", "Ampliações", "Modernização de instalações"],
-    icone: "hammer",
-  },
-  {
-    id: "s4",
-    titulo: "Administração de Obras",
-    descricao:
-      "Gestão técnica e financeira de obras de terceiros, com relatórios periódicos e controle de qualidade.",
-    itens: ["Cronograma físico-financeiro", "Fiscalização técnica", "Relatórios periódicos"],
+      "Presença próxima no canteiro para acompanhar andamento, decisões e qualidade da execução.",
+    itens: ["Rotina de obra", "Controle das etapas", "Apoio ao cliente"],
     icone: "clipboard",
   },
   {
-    id: "s5",
-    titulo: "Construção de piscinas",
+    id: "s4",
+    titulo: "Reformas e ampliações",
     descricao:
-      "Execução de piscinas com a experiência que tornou a RGR referência regional no litoral gaúcho.",
-    itens: ["Planejamento da execução", "Qualidade no acabamento", "Acompanhamento próximo"],
+      "Intervenções residenciais planejadas para melhorar espaços existentes com menos transtorno.",
+    itens: ["Reformas residenciais", "Ampliações", "Adequações de espaços"],
+    icone: "hammer",
+  },
+  {
+    id: "s5",
+    titulo: "Acabamentos",
+    descricao:
+      "Cuidado com detalhes finais que valorizam a obra e deixam os ambientes prontos para uso.",
+    itens: ["Revestimentos", "Detalhes finais", "Qualidade visual"],
     icone: "ruler",
   },
 ];
@@ -85,56 +46,44 @@ export const servicos: Servico[] = [
 export const diferenciais: Diferencial[] = [
   {
     id: "df1",
-    titulo: "Atendimento personalizado",
-    descricao: "Um único ponto de contato acompanha sua obra do início ao fim, sem intermediários.",
-    icone: "handshake",
-  },
-  {
-    id: "df2",
-    titulo: "Transparência total",
-    descricao: "Relatórios periódicos de andamento físico e financeiro, sempre à disposição do cliente.",
+    titulo: "Presença na obra",
+    descricao: "Acompanhamento próximo para manter cada etapa bem conduzida.",
     icone: "eye",
   },
   {
-    id: "df3",
-    titulo: "Entrega no prazo",
-    descricao: "Cronograma físico-financeiro rígido e monitorado semanalmente pela nossa engenharia.",
+    id: "df2",
+    titulo: "Organização",
+    descricao: "Processo de trabalho claro, com atenção ao canteiro, materiais e sequência da execução.",
     icone: "clock",
   },
   {
+    id: "df3",
+    titulo: "Compromisso",
+    descricao: "Relação direta, responsável e orientada ao que foi combinado com o cliente.",
+    icone: "handshake",
+  },
+  {
     id: "df4",
-    titulo: "Equipe especializada",
-    descricao: "Profissionais próprios e parceiros qualificados em cada etapa da construção.",
-    icone: "users",
+    titulo: "Atenção aos detalhes",
+    descricao: "Cuidado com acabamento, proporção e qualidade visual do resultado final.",
+    icone: "shield",
   },
   {
     id: "df5",
-    titulo: "Materiais de qualidade",
-    descricao: "Fornecedores homologados e controle técnico de materiais em todas as obras.",
-    icone: "shield",
+    titulo: "Execução residencial",
+    descricao: "Experiência aplicada em casas, reformas, áreas externas e piscinas.",
+    icone: "users",
   },
 ];
 
 export const videosDestaque: VideoDestaque[] = [
   {
     id: "vd1",
-    titulo: "Timelapse — Residência Vista Verde",
-    obraRelacionada: "residencia-vista-verde",
-    duracao: "02:18",
-    descricao: "14 meses de obra, do terreno à entrega, resumidos em minutos.",
-  },
-  {
-    id: "vd2",
-    titulo: "Evolução estrutural — Edifício Horizonte",
-    obraRelacionada: "edificio-horizonte",
-    duracao: "03:42",
-    descricao: "Acompanhe a elevação estrutural dos 12 pavimentos.",
-  },
-  {
-    id: "vd3",
-    titulo: "Bosque Imperial — Julho/2026",
-    obraRelacionada: "residencial-bosque-imperial",
-    duracao: "02:40",
-    descricao: "Registro atual da fase de acabamento do condomínio.",
+    titulo: "Do projeto à realização",
+    obraRelacionada: "residencia-contemporanea",
+    duracao: "00:55",
+    src: "/videos/obra-residencial.mp4",
+    poster: "/videos/obra-residencial-poster.webp",
+    descricao: "Registro real de ambientes, área externa e detalhes de uma obra residencial.",
   },
 ];

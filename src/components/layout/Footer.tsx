@@ -12,7 +12,6 @@ const colunas = [
       { href: "/#sobre", label: "Sobre a RGR" },
       { href: "/obras", label: "Obras" },
       { href: "/#servicos", label: "Serviços" },
-      { href: "/#depoimentos", label: "Depoimentos" },
       { href: "/#contato", label: "Contato" },
     ],
   },
@@ -20,9 +19,10 @@ const colunas = [
     titulo: "Serviços",
     links: [
       { href: "/#servicos", label: "Construção residencial" },
-      { href: "/#servicos", label: "Obras completas" },
-      { href: "/#servicos", label: "Reformas" },
-      { href: "/#servicos", label: "Construção de piscinas" },
+      { href: "/#servicos", label: "Execução de projetos" },
+      { href: "/#servicos", label: "Acompanhamento de obras" },
+      { href: "/#servicos", label: "Reformas e ampliações" },
+      { href: "/#servicos", label: "Acabamentos" },
     ],
   },
 ];
@@ -43,7 +43,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-mist leading-relaxed max-w-xs">
-              {empresa.slogan} Construção residencial, reformas, obras completas e piscinas no litoral gaúcho.
+              {empresa.slogan}
             </p>
             <a
               href={empresa.instagram}
@@ -106,8 +106,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {empresa.nome}. Todos os direitos reservados.
           </p>
           <p className="text-xs text-mist">
-            Desenvolvido por{" "}
-            <span className="text-paper/80">InovaFlow</span>
+            Desenvolvido por <span className="text-paper/80">InovaFlow</span>
           </p>
         </div>
       </Container>

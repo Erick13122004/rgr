@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { Play } from "lucide-react";
 import MediaFrame from "@/components/ui/MediaFrame";
@@ -15,10 +16,20 @@ export default function ObraVideos({ videos }: { videos: VideoObra[] }) {
         {videos.map((video, i) => (
           <button key={video.id} onClick={() => setAtivo(i)} className="group text-left">
             <MediaFrame ratio="aspect-video">
-              <div className="h-12 w-12 rounded-full border border-paper/30 flex items-center justify-center group-hover:border-scarlet group-hover:bg-scarlet transition-all duration-300">
+              {video.poster && (
+                <Image
+                  src={video.poster}
+                  alt={`Capa do vídeo ${video.titulo}`}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              )}
+              <div className="absolute inset-0 bg-ink/40 group-hover:bg-ink/20 transition-colors" />
+              <div className="relative h-12 w-12 rounded-full border border-paper/30 bg-ink/70 flex items-center justify-center group-hover:border-scarlet group-hover:bg-scarlet transition-all duration-300">
                 <Play size={18} className="ml-0.5 group-hover:text-paper transition-colors" />
               </div>
-              <span className="absolute bottom-3 left-3 font-mono text-[11px] text-paper/70">
+              <span className="absolute bottom-3 left-3 font-mono text-[11px] text-paper bg-ink/70 px-2 py-1">
                 {video.duracao}
               </span>
             </MediaFrame>
@@ -35,6 +46,8 @@ export default function ObraVideos({ videos }: { videos: VideoObra[] }) {
           onClose={() => setAtivo(null)}
           titulo={video.titulo}
           descricao={video.descricao}
+          src={video.src}
+          poster={video.poster}
         />
       ))}
     </>

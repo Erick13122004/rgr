@@ -1,47 +1,37 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useInView, useMotionValue, useSpring } from "framer-motion";
+import { useInView } from "framer-motion";
 
 export default function Counter({
   value,
   suffix = "",
-  duration = 1.8,
+  duration = 1300,
 }: {
-  value: number | string;
+  value: number;
   suffix?: string;
   duration?: number;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-60px" });
-  const motionValue = useMotionValue(0);
-  const springValue = useSpring(motionValue, {
-    duration: duration * 1000,
-    bounce: 0,
-  });
-  const [display, setDisplay] = useState("0");
+  const inView = useInView(ref, { once: true, margin: "-80px" });
+  const [display, setDisplay] = useState(0);
 
   useEffect(() => {
-    if (isInView && typeof value === "number") {
-      motionValue.set(value);
+    if (!inView) return;
+    let start: number | null = null;
+    let frame = 0;
+
+    function animate(timestamp: number) {
+      if (!start) start = timestamp;
+      const progress = Math.min((timestamp - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setDisplay(Math.round(value * eased));
+      if (progress < 1) frame = requestAnimationFrame(animate);
     }
-  }, [isInView, value, motionValue]);
 
-  useEffect(() => {
-    const unsubscribe = springValue.on("change", (latest) => {
-      setDisplay(Math.floor(latest).toLocaleString("pt-BR"));
-    });
-    return unsubscribe;
-  }, [springValue]);
-
-  if (typeof value === "string") {
-    return (
-      <span ref={ref}>
-        {value}
-        {suffix}
-      </span>
-    );
-  }
+    frame = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(frame);
+  }, [duration, inView, value]);
 
   return (
     <span ref={ref}>

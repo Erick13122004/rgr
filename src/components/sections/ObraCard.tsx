@@ -1,18 +1,30 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, MapPin } from "lucide-react";
 import MediaFrame from "@/components/ui/MediaFrame";
-import ProjectArt from "@/components/illustrations/ProjectArt";
 import { Obra } from "@/types";
 
-export default function ObraCard({ obra, index = 0 }: { obra: Obra; index?: number }) {
+const capas: Record<string, string> = {
+  "residencia-contemporanea": "/obras/residencia-contemporanea/capa.webp",
+  "piscina-residencial": "/obras/piscina-residencial/capa.webp",
+  "obra-em-andamento": "/obras/obra-em-andamento/capa.webp",
+};
+
+export default function ObraCard({ obra }: { obra: Obra; index?: number }) {
+  const capa = capas[obra.slug] ?? obra.galeria[0]?.src;
+
   return (
     <Link href={`/obras/${obra.slug}`} className="group block">
       <MediaFrame ratio="aspect-[4/5]" className="transition-colors duration-500 group-hover:border-scarlet/50">
-        <ProjectArt
-          variant={index}
-          className="h-2/3 w-2/3 text-paper/60 transition-all duration-500 group-hover:text-scarlet group-hover:scale-[1.04]"
+        <Image
+          src={capa}
+          alt={obra.galeria[0]?.alt ?? obra.nome}
+          fill
+          sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+          className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
         />
-        <span className="absolute top-4 right-4 font-mono text-[10px] tracking-widest uppercase text-paper/60 border border-paper/20 px-2.5 py-1">
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/5 to-transparent" />
+        <span className="absolute top-4 right-4 font-mono text-[10px] tracking-widest uppercase text-paper border border-paper/20 bg-ink/65 px-2.5 py-1">
           {obra.status}
         </span>
       </MediaFrame>
@@ -20,7 +32,7 @@ export default function ObraCard({ obra, index = 0 }: { obra: Obra; index?: numb
       <div className="mt-5 flex items-start justify-between gap-4">
         <div>
           <p className="font-mono text-[11px] tracking-[0.16em] uppercase text-scarlet mb-1.5">
-            {obra.categoria} · {obra.ano}
+            {obra.categoria}
           </p>
           <h3 className="font-display text-xl text-paper group-hover:text-scarlet transition-colors">
             {obra.nome}

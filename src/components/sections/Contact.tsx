@@ -10,10 +10,11 @@ import { empresa } from "@/lib/data/empresa";
 
 const assuntos = [
   "Construção residencial",
-  "Obra completa",
+  "Execução de projeto",
+  "Acompanhamento de obra",
+  "Reforma ou ampliação",
+  "Acabamentos",
   "Construção de piscina",
-  "Reforma",
-  "Administração de obra",
   "Outro assunto",
 ];
 
@@ -41,7 +42,7 @@ export default function Contact() {
             <SectionHeading
               eyebrow="Contato"
               title="Vamos conversar sobre sua obra."
-              description="Preencha o formulário ou fale diretamente pelo WhatsApp — nossa equipe responde rapidamente."
+              description="Preencha o formulário ou fale diretamente pelo WhatsApp da RGR."
               light
             />
 
@@ -162,7 +163,7 @@ export default function Contact() {
 
               {enviado && (
                 <p className="mt-4 text-xs text-mist text-center">
-                  Abrimos o WhatsApp em uma nova aba — finalize o envio por lá.
+                  Abrimos o WhatsApp em uma nova aba. Finalize o envio por lá.
                 </p>
               )}
             </form>

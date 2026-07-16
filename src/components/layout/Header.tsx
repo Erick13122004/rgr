@@ -11,10 +11,8 @@ import { empresa } from "@/lib/data/empresa";
 
 const links = [
   { href: "/#sobre", label: "Sobre" },
-  { href: "/#numeros", label: "Números" },
   { href: "/obras", label: "Obras" },
   { href: "/#servicos", label: "Serviços" },
-  { href: "/#depoimentos", label: "Depoimentos" },
   { href: "/#contato", label: "Contato" },
 ];
 
@@ -71,7 +69,7 @@ export default function Header() {
             {empresa.telefoneExibicao}
           </a>
           <Button href="/#contato" variant="primary" className="!py-3">
-            Solicitar Orçamento
+            Solicitar orçamento
           </Button>
         </div>
 
@@ -124,7 +122,7 @@ export default function Header() {
               ))}
               <div className="mt-8 flex flex-col gap-4">
                 <Button href="/#contato" onClick={() => setOpen(false)}>
-                  Solicitar Orçamento
+                  Solicitar orçamento
                 </Button>
                 <a
                   href={`https://wa.me/${empresa.whatsapp}`}

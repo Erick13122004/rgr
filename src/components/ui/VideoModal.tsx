@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { X, Play } from "lucide-react";
+import { X } from "lucide-react";
 import { useEffect } from "react";
 
 export default function VideoModal({
@@ -9,11 +9,15 @@ export default function VideoModal({
   onClose,
   titulo,
   descricao,
+  src,
+  poster,
 }: {
   open: boolean;
   onClose: () => void;
   titulo: string;
   descricao?: string;
+  src: string;
+  poster?: string;
 }) {
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -53,12 +57,10 @@ export default function VideoModal({
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
             className="relative z-10 w-full max-w-4xl"
           >
-            <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center justify-between gap-4 mb-4">
               <div>
                 <p className="font-display text-xl text-paper">{titulo}</p>
-                {descricao && (
-                  <p className="text-sm text-mist mt-1">{descricao}</p>
-                )}
+                {descricao && <p className="text-sm text-mist mt-1">{descricao}</p>}
               </div>
               <button
                 onClick={onClose}
@@ -68,16 +70,15 @@ export default function VideoModal({
                 <X size={18} />
               </button>
             </div>
-            <div className="relative aspect-video w-full bg-ink-soft border border-ink-line flex items-center justify-center overflow-hidden">
-              <div className="absolute inset-0 bp-grid opacity-40" />
-              <div className="relative flex flex-col items-center gap-3 text-mist">
-                <div className="h-16 w-16 rounded-full border border-paper/25 flex items-center justify-center">
-                  <Play size={22} className="ml-0.5 text-scarlet" />
-                </div>
-                <p className="text-xs font-mono tracking-wide uppercase">
-                  Player pronto para receber a URL do vídeo
-                </p>
-              </div>
+            <div className="relative aspect-video w-full bg-ink-soft border border-ink-line overflow-hidden">
+              <video
+                src={src}
+                poster={poster}
+                controls
+                autoPlay
+                playsInline
+                className="h-full w-full bg-black object-contain"
+              />
             </div>
           </motion.div>
         </motion.div>

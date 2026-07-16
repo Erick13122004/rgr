@@ -1,20 +1,25 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
-import SkylineDraw from "@/components/illustrations/SkylineDraw";
 import { empresa } from "@/lib/data/empresa";
 
 export default function Hero() {
   return (
     <section className="relative min-h-[100svh] flex flex-col justify-end overflow-hidden bg-ink">
-      <div className="absolute inset-0 bp-grid opacity-60" />
-      <div className="absolute inset-x-0 bottom-0 h-[55%] opacity-90">
-        <SkylineDraw className="w-full h-full" />
-      </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
+      <Image
+        src="/hero/fachada-concluida.webp"
+        alt="Fachada de residência contemporânea executada pela RGR Construtora"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/20" />
+      <div className="absolute inset-0 bg-ink/10" />
 
       <Container className="relative z-10 pb-24 pt-40">
         <motion.div
@@ -25,7 +30,7 @@ export default function Hero() {
         >
           <span className="h-px w-10 bg-scarlet" />
           <span className="font-mono text-[11px] tracking-[0.22em] uppercase text-scarlet">
-            {empresa.regiao} · trajetória desde {empresa.inicioTrajetoria}
+            {empresa.regiao} · obras residenciais
           </span>
         </motion.div>
 
@@ -33,20 +38,18 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-          className="font-display text-[clamp(2.6rem,7vw,6rem)] leading-[0.98] text-paper max-w-4xl text-balance"
+          className="font-display text-[clamp(2.6rem,7vw,6rem)] leading-[0.98] text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.55)] max-w-4xl text-balance"
         >
-          Experiência construída desde <span className="italic text-scarlet">2010</span>.
+          Excelência que transforma projetos em lares únicos.
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-7 max-w-lg text-base md:text-lg text-mist leading-relaxed"
+          className="mt-7 max-w-lg text-base md:text-lg text-white/85 leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]"
         >
-          Da experiência prática nas obras à atuação independente: trabalho,
-          acompanhamento próximo e compromisso em casas, projetos de maior porte
-          e piscinas no litoral gaúcho.
+          Construção com qualidade, compromisso e atenção em cada etapa.
         </motion.p>
 
         <motion.div
@@ -56,10 +59,10 @@ export default function Hero() {
           className="mt-10 flex flex-wrap items-center gap-4"
         >
           <Button href="/obras" variant="primary">
-            Ver Obras
+            Ver nossas obras
           </Button>
           <Button href="/#contato" variant="outline-light">
-            Solicitar Orçamento
+            Solicitar orçamento
           </Button>
         </motion.div>
       </Container>
@@ -68,7 +71,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.8 }}
-        className="relative z-10 border-t border-ink-line"
+        className="relative z-10 border-t border-paper/10"
       >
         <Container className="flex items-center justify-between py-5">
           <span className="hidden sm:block font-mono text-[11px] tracking-[0.2em] uppercase text-mist">

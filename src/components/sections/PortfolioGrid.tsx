@@ -8,9 +8,8 @@ import { Obra, CategoriaObra } from "@/types";
 const categorias: (CategoriaObra | "Todas")[] = [
   "Todas",
   "Residencial",
-  "Comercial",
-  "Empreendimento",
-  "Reforma",
+  "Piscina",
+  "Obra em andamento",
 ];
 
 export default function PortfolioGrid({ obras }: { obras: Obra[] }) {

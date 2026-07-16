@@ -15,7 +15,7 @@ export const empresa = {
   missao:
     "Construir e reformar com experiência prática, qualidade na execução e acompanhamento próximo em cada etapa, atendendo famílias e projetos no litoral gaúcho com confiança, compromisso e cuidado especial em obras residenciais e piscinas.",
   historia: [
-    "A trajetória de Rodrigo Guimarães na construção civil começou em 2010, quando passou a trabalhar como peão na cidade de Dois Irmãos, no Rio Grande do Sul. Durante aproximadamente seis anos, atuou diretamente nas obras, adquirindo experiência prática e conhecendo cada etapa do trabalho na construção civil.",
+    "A trajetória de Rodrigo Guimarães na construção civil começou em 2010, quando passou a trabalhar como peão para dois irmãos. Durante aproximadamente seis anos, atuou diretamente nas obras, adquirindo experiência prática e conhecendo cada etapa do trabalho na construção civil.",
     "Em 2016, Rodrigo iniciou sua atuação independente, dando origem à trajetória que posteriormente se consolidaria como RGR Construtora. Seu primeiro serviço por conta própria foi realizado em Gramado, no Hotel Daara, marcando uma nova fase em sua vida profissional.",
     "No ano seguinte, em 2017, trabalhou na execução de um prédio em Canela, localizado próximo à Igreja de Pedra. Depois desse projeto, participou de outra obra de prédio também na cidade de Canela.",
     "Em 2018, Rodrigo iniciou os trabalhos no Sky Palace Hotel, em Gramado. Para atender à dimensão do projeto, passou a liderar uma equipe formada por 18 funcionários, ampliando sua experiência na coordenação de pessoas e na execução de obras de maior porte.",
@@ -36,7 +36,7 @@ export const numeros = [
   { id: "anos", valor: 16, sufixo: "+", rotulo: "Anos de experiência" },
   { id: "casas", valor: 23, sufixo: "", rotulo: "Casas executadas no litoral" },
   { id: "piscinas", valor: 16, sufixo: "", rotulo: "Piscinas executadas" },
-  { id: "equipe-sky", valor: 18, sufixo: "", rotulo: "Profissionais no Sky Palace Hotel" },
+  { id: "equipe-sky", valor: 18, sufixo: "", rotulo: "Profissionais na equipe do Sky Palace Hotel" },
 ] as const;
 
 export const linhaDoTempoEmpresa: EtapaEmpresa[] = [
@@ -44,7 +44,7 @@ export const linhaDoTempoEmpresa: EtapaEmpresa[] = [
     ano: "2010",
     titulo: "Início na construção civil",
     descricao:
-      "Rodrigo começa a trabalhar como peão na cidade de Dois Irmãos, no Rio Grande do Sul, adquirindo experiência prática diretamente nas obras.",
+      "Rodrigo começa a trabalhar como peão para dois irmãos, adquirindo experiência prática diretamente nas obras.",
   },
   {
     ano: "2016",

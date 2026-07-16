@@ -11,13 +11,7 @@ export default function Stats() {
           {numeros.map((n, i) => (
             <Reveal key={n.id} delay={i * 0.08}>
               <div className="border-l border-ink/15 pl-5">
-                <p
-                  className={`font-display leading-none text-bordeaux ${
-                    typeof n.valor === "string"
-                      ? "text-[clamp(1.65rem,4vw,2.6rem)]"
-                      : "text-[clamp(2.2rem,5vw,3.6rem)]"
-                  }`}
-                >
+                <p className="font-display leading-none text-bordeaux text-[clamp(2.2rem,5vw,3.6rem)]">
                   <Counter value={n.valor} suffix={n.sufixo} />
                 </p>
                 <p className="mt-3 text-[13px] tracking-wide text-stone">{n.rotulo}</p>

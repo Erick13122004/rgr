@@ -1,32 +1,34 @@
 // Modelo de dados central do site.
-// Pensado para futuramente ser alimentado por um painel administrativo / CMS,
-// sem exigir mudanças na camada de apresentação (components).
+// Mantido simples para exibir apenas informações confirmadas e materiais reais.
 
 export type CategoriaObra =
   | "Residencial"
-  | "Comercial"
-  | "Empreendimento"
-  | "Reforma";
+  | "Piscina"
+  | "Obra em andamento";
 
-export type StatusObra = "Concluída" | "Em andamento" | "Entregue";
+export type StatusObra = "Concluída" | "Em andamento";
 
 export interface EtapaLinhaDoTempo {
   id: string;
-  mes: string; // ex: "Fev/2024"
+  mes: string;
   titulo: string;
   descricao: string;
 }
 
 export interface ImagemObra {
   id: string;
+  src: string;
+  alt: string;
   legenda?: string;
-  tipo?: "planta" | "obra" | "entrega" | "antes" | "depois";
+  tipo?: "obra" | "entrega" | "antes" | "depois";
 }
 
 export interface VideoObra {
   id: string;
   titulo: string;
-  duracao: string; // "02:14"
+  duracao: string;
+  src: string;
+  poster?: string;
   descricao?: string;
 }
 
@@ -37,7 +39,7 @@ export interface Obra {
   categoria: CategoriaObra;
   status: StatusObra;
   ano: string;
-  areaConstruida: string; // "1.240 m²"
+  areaConstruida: string;
   descricaoResumo: string;
   descricaoCompleta: string[];
   localizacao: string;
@@ -55,7 +57,7 @@ export interface Depoimento {
   cidade: string;
   obra?: string;
   texto: string;
-  nota: number; // 1-5
+  nota: number;
 }
 
 export interface Servico {
@@ -84,5 +86,7 @@ export interface VideoDestaque {
   titulo: string;
   obraRelacionada: string;
   duracao: string;
+  src: string;
+  poster: string;
   descricao: string;
 }

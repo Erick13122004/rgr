@@ -10,19 +10,18 @@ const siteUrl = "https://www.rgrconstrutora.com.br";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${empresa.nome} | Construção civil e piscinas no RS`,
+    default: `${empresa.nome} | Construção residencial no RS`,
     template: `%s | ${empresa.nome}`,
   },
   description:
-    "Experiência construída desde 2010 em obras residenciais, reformas, projetos de maior porte e construção de piscinas no litoral gaúcho.",
+    "RGR Construtora: execução de projetos residenciais com organização, responsabilidade e atenção aos detalhes no Rio Grande do Sul.",
   keywords: [
-    "construtora Rio Grande do Sul",
-    "construtora RS",
-    "construção residencial",
-    "construção de piscinas",
-    "piscinas litoral gaúcho",
-    "reformas RS",
     "RGR Construtora",
+    "construtora Rio Grande do Sul",
+    "construção residencial",
+    "execução de obras",
+    "reformas residenciais",
+    "construção de piscinas",
   ],
   authors: [{ name: empresa.nome }],
   openGraph: {
@@ -30,16 +29,23 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: siteUrl,
     siteName: empresa.nome,
-    title: `${empresa.nome} | Construção civil e piscinas no RS`,
+    title: `${empresa.nome} | Construção residencial no RS`,
     description:
-      "Conheça a trajetória da RGR: experiência prática desde 2010, atuação independente iniciada em 2016 e presença no litoral gaúcho.",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: empresa.nome }],
+      "Conheça registros reais de obras residenciais, piscina e etapas de execução da RGR Construtora.",
+    images: [
+      {
+        url: "/hero/fachada-concluida.webp",
+        width: 1600,
+        height: 1200,
+        alt: "Fachada de obra residencial da RGR Construtora",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${empresa.nome} | Construção civil e piscinas no RS`,
-    description: "Experiência construída desde 2010 com trabalho, qualidade e confiança.",
-    images: ["/og-image.jpg"],
+    title: `${empresa.nome} | Construção residencial no RS`,
+    description: empresa.slogan,
+    images: ["/hero/fachada-concluida.webp"],
   },
   robots: { index: true, follow: true },
   alternates: { canonical: siteUrl },
@@ -49,7 +55,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
   name: empresa.nome,
-  image: `${siteUrl}/og-image.jpg`,
+  image: `${siteUrl}/hero/fachada-concluida.webp`,
   url: siteUrl,
   telephone: `+${empresa.whatsapp}`,
   email: empresa.email,
@@ -60,8 +66,7 @@ const jsonLd = {
   },
   areaServed: "Rio Grande do Sul",
   sameAs: [empresa.instagram],
-  description:
-    "Construtora com atuação em obras residenciais, reformas, projetos de maior porte e construção de piscinas no litoral gaúcho.",
+  description: empresa.missao,
 };
 
 export default function RootLayout({

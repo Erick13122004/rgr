@@ -12,8 +12,8 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div>
             <SectionHeading
-              eyebrow="Quem somos"
-              title="Construção é ofício. Confiança é o que entregamos."
+              eyebrow="Sobre nós"
+              title="Uma história construída com trabalho e experiência."
               description={empresa.missao}
             />
 
@@ -26,11 +26,10 @@ export default function About() {
             </Reveal>
 
             <Reveal delay={0.2}>
-              <div className="mt-10 grid grid-cols-2 gap-6">
+              <div className="mt-10 grid sm:grid-cols-2 gap-5">
                 {empresa.valores.map((valor) => (
-                  <div key={valor} className="flex items-start gap-3">
-                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-scarlet shrink-0" />
-                    <p className="text-sm text-paper/80 leading-relaxed">{valor}</p>
+                  <div key={valor} className="border-t border-scarlet pt-5">
+                    <p className="text-sm text-paper/85 leading-relaxed">{valor}</p>
                   </div>
                 ))}
               </div>
@@ -47,9 +46,8 @@ export default function About() {
                     fill
                     sizes="(min-width: 1024px) 42vw, 100vw"
                     className="object-cover brightness-[0.82] contrast-110 saturate-95"
-                    priority
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/10 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
                     <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-paper/75">
                       Família e propósito
@@ -73,7 +71,6 @@ export default function About() {
           </Reveal>
         </div>
 
-        {/* Linha do tempo */}
         <div className="mt-28 md:mt-36">
           <Reveal>
             <p className="font-mono text-[11px] tracking-[0.22em] uppercase text-scarlet mb-14">
@@ -83,7 +80,7 @@ export default function About() {
 
           <div className="relative">
             <div className="absolute left-0 right-0 top-[7px] h-px bg-ink-line hidden md:block" />
-            <div className="grid md:grid-cols-6 gap-10 md:gap-6">
+            <div className="grid md:grid-cols-3 xl:grid-cols-6 gap-10 md:gap-6">
               {linhaDoTempoEmpresa.map((etapa, i) => (
                 <Reveal key={`${etapa.ano}-${etapa.titulo}`} delay={i * 0.08}>
                   <div className="relative pl-6 md:pl-0">

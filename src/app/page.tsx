@@ -5,7 +5,6 @@ import PortfolioPreview from "@/components/sections/PortfolioPreview";
 import VideosSection from "@/components/sections/VideosSection";
 import Services from "@/components/sections/Services";
 import Differentials from "@/components/sections/Differentials";
-import Testimonials from "@/components/sections/Testimonials";
 import CTA from "@/components/sections/CTA";
 import Contact from "@/components/sections/Contact";
 
@@ -15,11 +14,10 @@ export default function Home() {
       <Hero />
       <About />
       <Stats />
-      <PortfolioPreview />
-      <VideosSection />
       <Services />
+      <PortfolioPreview />
       <Differentials />
-      <Testimonials />
+      <VideosSection />
       <CTA />
       <Contact />
     </>
