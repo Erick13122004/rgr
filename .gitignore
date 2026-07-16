@@ -8,3 +8,6 @@ dist
 work/
 public/Videos e Fotos para RGR/
 public/Videos e Fotos para  RGR/
+
+.vercel
+.env*
