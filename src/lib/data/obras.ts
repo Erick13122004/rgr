@@ -4,18 +4,18 @@ export const obras: Obra[] = [
   {
     slug: "residencia-contemporanea",
     nome: "Residência contemporânea",
-    cidade: "Rio Grande do Sul",
+    cidade: "Litoral norte do RS",
     categoria: "Residencial",
     status: "Concluída",
     ano: "",
     areaConstruida: "",
     descricaoResumo:
-      "Registro real de uma residência com fachada contemporânea e acabamento externo concluído.",
+      "Registro real de uma residência com fachada contemporânea, execução residencial e acabamento externo concluído.",
     descricaoCompleta: [
       "Projeto residencial registrado em fase finalizada, com atenção à fachada, aos volumes da construção e à integração dos espaços externos.",
       "A apresentação do projeto prioriza o material real disponível, sem acrescentar dados não confirmados sobre metragem, prazo, endereço ou cliente.",
     ],
-    localizacao: "Rio Grande do Sul",
+    localizacao: "Osório, Atlântida Sul e litoral norte do RS",
     diferenciais: [
       "Fachada contemporânea",
       "Execução residencial",
@@ -78,18 +78,18 @@ export const obras: Obra[] = [
   {
     slug: "piscina-residencial",
     nome: "Piscina residencial",
-    cidade: "Rio Grande do Sul",
+    cidade: "Litoral norte do RS",
     categoria: "Piscina",
     status: "Concluída",
     ano: "",
     areaConstruida: "",
     descricaoResumo:
-      "Imagem real de piscina residencial, com foco na execução e no acabamento da área externa.",
+      "Imagem real de piscina residencial, com foco na execução, organização e acabamento da área externa.",
     descricaoCompleta: [
       "A construção de piscinas faz parte dos serviços compatíveis com os registros reais enviados para o site.",
       "Esta página reúne apenas o material disponível, usando uma identificação genérica para não atribuir dados que ainda não foram confirmados.",
     ],
-    localizacao: "Rio Grande do Sul",
+    localizacao: "Osório, Atlântida Sul e litoral norte do RS",
     diferenciais: [
       "Execução de piscina residencial",
       "Área externa valorizada",
@@ -122,18 +122,18 @@ export const obras: Obra[] = [
   {
     slug: "obra-em-andamento",
     nome: "Obra em andamento",
-    cidade: "Rio Grande do Sul",
+    cidade: "Litoral norte do RS",
     categoria: "Obra em andamento",
     status: "Em andamento",
     ano: "",
     areaConstruida: "",
     descricaoResumo:
-      "Registros reais de canteiro, estrutura e materiais durante a execução de uma obra residencial.",
+      "Registros reais de canteiro, estrutura, materiais e acompanhamento durante a execução de uma obra residencial.",
     descricaoCompleta: [
       "Os registros mostram etapas de execução, planejamento e organização do canteiro.",
       "A obra é apresentada de forma neutra para preservar a fidelidade ao material recebido, sem inventar nome, metragem, prazo ou localização específica.",
     ],
-    localizacao: "Rio Grande do Sul",
+    localizacao: "Osório, Atlântida Sul e litoral norte do RS",
     diferenciais: [
       "Acompanhamento da execução",
       "Organização do canteiro",

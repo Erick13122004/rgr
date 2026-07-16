@@ -7,7 +7,7 @@ import { obras } from "@/lib/data/obras";
 export const metadata: Metadata = {
   title: "Obras",
   description:
-    "Conheça registros reais de obras residenciais, piscina e etapas de execução da RGR Construtora.",
+    "Conheça registros reais de obras residenciais, piscinas e etapas de execução da RGR Construtora em Osório, Atlântida Sul e litoral norte do RS.",
 };
 
 export default function ObrasPage() {
@@ -25,8 +25,8 @@ export default function ObrasPage() {
             Obras reais, apresentadas com clareza.
           </h1>
           <p className="mt-6 max-w-xl text-mist text-base leading-relaxed">
-            Fotos e vídeo reais organizados por tipo de registro, sem nomes de
-            clientes, metragens ou locais específicos não confirmados.
+            Fotos e vídeo reais organizados por tipo de registro, com foco em
+            casas, piscinas, reformas e acompanhamento de obras no litoral norte.
           </p>
         </Reveal>
 

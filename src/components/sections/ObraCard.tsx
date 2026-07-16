@@ -40,6 +40,9 @@ export default function ObraCard({ obra }: { obra: Obra; index?: number }) {
           <p className="mt-1.5 flex items-center gap-1.5 text-[13px] text-mist">
             <MapPin size={13} /> {obra.cidade}
           </p>
+          <p className="mt-3 max-w-sm text-[13px] text-mist leading-relaxed">
+            {obra.descricaoResumo}
+          </p>
         </div>
         <span className="mt-1 shrink-0 h-9 w-9 rounded-full border border-paper/20 flex items-center justify-center text-paper/70 group-hover:border-scarlet group-hover:text-scarlet group-hover:bg-scarlet/10 transition-all">
           <ArrowUpRight size={16} />

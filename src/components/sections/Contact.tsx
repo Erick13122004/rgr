@@ -42,7 +42,7 @@ export default function Contact() {
             <SectionHeading
               eyebrow="Contato"
               title="Vamos conversar sobre sua obra."
-              description="Preencha o formulário ou fale diretamente pelo WhatsApp da RGR."
+              description="Preencha o formulário ou fale diretamente pelo WhatsApp da RGR para obras em Osório, Atlântida Sul e litoral norte."
               light
             />
 

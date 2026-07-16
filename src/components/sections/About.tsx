@@ -41,7 +41,7 @@ export default function About() {
               <MediaFrame ratio="aspect-[4/5]" className="bg-ink border-paper/15">
                 <div className="relative h-full w-full">
                   <Image
-                    src="/rodrigo-familia-rgr.jpeg"
+                    src="/rodrigo-familia-rgr.webp"
                     alt="Rodrigo Guimarães, responsável pela RGR, com sua família"
                     fill
                     sizes="(min-width: 1024px) 42vw, 100vw"

@@ -7,7 +7,7 @@ export default function WhatsAppFloat() {
   return (
     <a
       href={`https://wa.me/${empresa.whatsapp}?text=${encodeURIComponent(
-        "Olá! Gostaria de solicitar um orçamento com a RGR Construtora."
+        "Olá! Vim pelo site da RGR Construtora e gostaria de falar sobre uma obra."
       )}`}
       target="_blank"
       rel="noopener noreferrer"

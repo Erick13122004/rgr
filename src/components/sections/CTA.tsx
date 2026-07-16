@@ -22,7 +22,7 @@ export default function CTA() {
         <div className="flex flex-col sm:flex-row gap-4 shrink-0">
           <Button
             href={`https://wa.me/${empresa.whatsapp}?text=${encodeURIComponent(
-              "Olá! Gostaria de solicitar um orçamento com a RGR Construtora."
+              "Olá! Gostaria de conversar com a RGR sobre uma obra em Osório, Atlântida Sul ou litoral norte."
             )}`}
             target="_blank"
             variant="outline-light"

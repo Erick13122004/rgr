@@ -10,13 +10,16 @@ const siteUrl = "https://rgrconstrutora.net.br";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${empresa.nome} | Construção residencial no RS`,
+    default: `${empresa.nome} | Construção residencial em Osório e litoral norte`,
     template: `%s | ${empresa.nome}`,
   },
   description:
-    "RGR Construtora: execução de projetos residenciais com organização, responsabilidade e atenção aos detalhes no Rio Grande do Sul.",
+    "RGR Construtora em Osório - RS e Atlântida Sul: construção residencial, reformas, piscinas e acompanhamento de obras no litoral norte do Rio Grande do Sul.",
   keywords: [
     "RGR Construtora",
+    "construtora Osório RS",
+    "construtora Atlântida Sul",
+    "construtora litoral norte RS",
     "construtora Rio Grande do Sul",
     "construção residencial",
     "execução de obras",
@@ -29,9 +32,9 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: siteUrl,
     siteName: empresa.nome,
-    title: `${empresa.nome} | Construção residencial no RS`,
+    title: `${empresa.nome} | Construção residencial em Osório e litoral norte`,
     description:
-      "Conheça registros reais de obras residenciais, piscina e etapas de execução da RGR Construtora.",
+      "Conheça registros reais de obras residenciais, piscinas e etapas de execução da RGR Construtora em Osório, Atlântida Sul e litoral norte.",
     images: [
       {
         url: "/brand/og-logo-rgr.png",
@@ -43,22 +46,23 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${empresa.nome} | Construção residencial no RS`,
+    title: `${empresa.nome} | Construção residencial em Osório e litoral norte`,
     description: empresa.slogan,
     images: ["/brand/og-logo-rgr.png"],
   },
   icons: {
-    icon: "/brand/favicon.png",
-    shortcut: "/brand/favicon.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
     apple: "/brand/apple-touch-icon.png",
   },
+  manifest: "/manifest.json",
   robots: { index: true, follow: true },
   alternates: { canonical: siteUrl },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "GeneralContractor",
+  "@type": ["GeneralContractor", "LocalBusiness"],
   name: empresa.nome,
   image: `${siteUrl}/brand/logo-rgr.png`,
   url: siteUrl,
@@ -71,7 +75,8 @@ const jsonLd = {
     streetAddress: "Atlântida Sul",
     addressCountry: "BR",
   },
-  areaServed: "Rio Grande do Sul",
+  areaServed: empresa.areaAtuacao,
+  hasMap: "https://www.google.com/maps?q=Atl%C3%A2ntida+Sul,+Os%C3%B3rio+-+RS",
   sameAs: [empresa.instagram],
   description: empresa.missao,
 };

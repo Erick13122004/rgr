@@ -5,7 +5,7 @@ export const servicos: Servico[] = [
     id: "s1",
     titulo: "Construção residencial",
     descricao:
-      "Execução de obras residenciais com organização, acompanhamento e cuidado em cada etapa.",
+      "Execução de obras residenciais em Osório, Atlântida Sul e litoral norte com organização, acompanhamento e cuidado em cada etapa.",
     itens: ["Obras completas", "Estrutura e alvenaria", "Acabamentos"],
     icone: "home",
   },
@@ -13,7 +13,7 @@ export const servicos: Servico[] = [
     id: "s2",
     titulo: "Execução de projetos",
     descricao:
-      "Transformação do projeto em obra, com atenção à leitura técnica e ao resultado final.",
+      "Transformação do projeto em obra, com atenção à leitura técnica, ao canteiro e ao resultado final.",
     itens: ["Planejamento da execução", "Etapas organizadas", "Acompanhamento técnico"],
     icone: "building",
   },
@@ -21,7 +21,7 @@ export const servicos: Servico[] = [
     id: "s3",
     titulo: "Acompanhamento de obras",
     descricao:
-      "Presença próxima no canteiro para acompanhar andamento, decisões e qualidade da execução.",
+      "Presença próxima no canteiro para acompanhar andamento, decisões, materiais e qualidade da execução.",
     itens: ["Rotina de obra", "Controle das etapas", "Apoio ao cliente"],
     icone: "clipboard",
   },

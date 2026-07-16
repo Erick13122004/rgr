@@ -6,15 +6,20 @@ export const empresa = {
   slogan: "Experiência construída desde 2010 com trabalho, qualidade e confiança.",
   inicioTrajetoria: 2010,
   inicioAtuacaoIndependente: 2016,
-  regiao: "Rio Grande do Sul",
+  regiao: "Osório - RS · Atlântida Sul",
   telefoneExibicao: "(51) 99526-7312",
   whatsapp: "5551995267312",
   email: "rodrigorgrconstrutora@gmail.com",
   endereco: "Osório - RS\nAtlântida Sul",
   instagram: "https://www.instagram.com/rodrigoguimaraes_construtor",
   instagramExibicao: "@rodrigoguimaraes_construtor",
+  areaAtuacao: [
+    "Osório - RS",
+    "Atlântida Sul",
+    "Litoral norte do Rio Grande do Sul",
+  ],
   missao:
-    "Construir e reformar com experiência prática, qualidade na execução e acompanhamento próximo em cada etapa, atendendo famílias e projetos no litoral gaúcho com confiança, compromisso e cuidado especial em obras residenciais e piscinas.",
+    "Construir e reformar com experiência prática, qualidade na execução e acompanhamento próximo em cada etapa, atendendo famílias e projetos em Osório, Atlântida Sul e no litoral norte do Rio Grande do Sul com confiança, compromisso e cuidado especial em obras residenciais e piscinas.",
   historia: [
     "A trajetória de Rodrigo Guimarães na construção civil começou em 2010, quando passou a trabalhar como peão para dois irmãos. Durante aproximadamente seis anos, atuou diretamente nas obras, adquirindo experiência prática e conhecendo cada etapa do trabalho na construção civil.",
     "Em 2016, Rodrigo iniciou sua atuação independente, dando origem à trajetória que posteriormente se consolidaria como RGR Construtora. Seu primeiro serviço por conta própria foi realizado em Gramado, no Hotel Daara, marcando uma nova fase em sua vida profissional.",
