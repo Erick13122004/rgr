@@ -14,7 +14,7 @@ export default function Counter({
 }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
-  const [display, setDisplay] = useState(0);
+  const [display, setDisplay] = useState(value);
 
   useEffect(() => {
     if (!inView) return;
@@ -29,6 +29,7 @@ export default function Counter({
       if (progress < 1) frame = requestAnimationFrame(animate);
     }
 
+    setDisplay(0);
     frame = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(frame);
   }, [duration, inView, value]);

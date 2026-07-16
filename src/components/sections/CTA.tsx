@@ -30,11 +30,11 @@ export default function CTA() {
             icon={false}
           >
             <span className="flex items-center gap-2">
-              <MessageCircle size={16} /> Chamar no WhatsApp
+              <MessageCircle size={16} /> Falar sobre a obra
             </span>
           </Button>
           <Button href="/#contato" variant="outline-light" className="!border-ink !bg-ink !text-paper hover:!bg-paper hover:!text-ink">
-            Solicitar orçamento
+            Vamos planejar sua obra
           </Button>
         </div>
       </Container>
